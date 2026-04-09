@@ -134,7 +134,7 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "Left",
+                    "name": "Up",
                     "id": "215cab35-0dd4-474e-bbe2-24765f0b6e8f",
                     "path": "<Keyboard>/w",
                     "interactions": "",
@@ -145,7 +145,7 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "Right",
+                    "name": "Down",
                     "id": "abfbb0f1-d909-4179-9e2d-a2afb35731d0",
                     "path": "<Keyboard>/s",
                     "interactions": "",
