@@ -28,3 +28,20 @@
 Write your W2 Devlog here.
 
 Continue adding additional headers below this one for future weeks and future activities.
+
+## W3
+
+### Activity 1
+
+### Activity 2
+
+1. It is advantageous to save the event name for the explore-to-dialogue state transitions as the Scene variable clickNpcEventName because it allows easier management. Using a variable to manage action easier compared to a node because it will avoid misspelling. I use a variable clickNpcEventName = clickWalrus and call the variable clickNpcEventName so that I don’t need to type clickWalrus every time I need to use that node. Moreover, if I want to change the name of the node, I will only need to change it one time rather than changing it in every place in each graph and custom event.
+
+
+2. I added a Debug.Log() node for step 7, checking whether the animal falling stopped in the dialogue mode, and continued in the explore mode. This node is particularly useful because in dialogue mode, the cursor is disabled, and I couldn’t look upward to see whether the animal is stopped in the air. However, after I added the animal stopped by the Debug.Log() node in the dialogue graph, I’m sure now that the Set Enabled is working. 
+
+
+3. The Set Cursor Lock State is relevant to my Vertical Slice because I would like to lock the player’s cursor when they interact with the riddle at each crossroad. After the player clicks on the riddle, a text will appear, similar to the dialogue state in this activity. Cursor lock in this state makes sense because otherwise the player’s view is likely to move and disrupt reading through the riddle.
+
+
+4. The concept of a game state and state machine is extremely relevant to my Vertical Slice because my horror game involves a monster switching in various mutually exclusive states, with each state performing different actions. The monster will switch between states of patrol, search, chase, and attack. In patrol state, the monster wanders around in predetermine path or to a random location using Navemesh. After the player gets in the detection range of the monster, it transitions into the search state. After the player gets in the monster’s line of sight, the monster switches into chase state and pursues the player at a higher speed. If the monster gets near enough to the player, it switches to the attack state and damage player.
