@@ -25,13 +25,14 @@
 [Break-down Diagram Link](https://www.figma.com/design/GscfURruZJtSMoIxLdmxUY/GDIM-33-Break-Down-Diagram?t=JKCzMFfHauji2zpV-1)
 
 ## W2
-Write your W2 Devlog here.
 
-Continue adding additional headers below this one for future weeks and future activities.
+N/A
 
 ## W3
 
 ### Activity 1
+
+[Updated Breakdown Diagram Link](https://www.figma.com/design/npm787IlXqCvnhdhI53a0R/Xichan-Updated-Breakdown?node-id=0-1&p=f&t=UgTFQP49jCnK04cZ-0)
 
 ### Activity 2
 
