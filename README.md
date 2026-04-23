@@ -46,3 +46,28 @@ N/A
 
 
 4. The concept of a game state and state machine is extremely relevant to my Vertical Slice because my horror game involves a monster switching in various mutually exclusive states, with each state performing different actions. The monster will switch between states of patrol, search, chase, and attack. In patrol state, the monster wanders around in predetermine path or to a random location using Navmesh. After the player gets in the detection range of the monster, it transitions into the search state. After the player gets in the monster’s line of sight, the monster switches into chase state and pursues the player at a higher speed. If the monster gets near enough to the player, it switches to the attack state and damage player.
+
+
+## W4
+
+### Activity 1
+
+#### Playtest Goal
+
+For my current build, the player could walk, look around, and explore the maze while a monster chases them. If the player gets caught, the game ends, and they can restart the game. The NavMesh AI navigation for the monster works and allows the monster to patrol between two patrol points. 
+
+The goal for today’s playtesting is to determine whether the monster’s AI navigation system and state machine controlling state transition between patrol, chase, and attack work properly and repeatedly. I would also like to figure out whether the basic mechanics of running from the monster are intuitive enough and if the maze is well-designed so that it is easy to navigate. 
+
+Playtest Team Member: Tina Meng,Xichan Zheng,JingyiBi,Alex Ding,Yan Zhang
+
+#### Playtest Note
+
+1. The player’s mouse-controlled look-around is too fast, making them feel dizzy and sick.
+2. Monster’s chase/attack detection range is too small. Once the player leaves its range, the monster instantly ignores the player and proceeds to the patrol point. Other team members said that this kills the horror vibe. Maybe it is better to use the field of view instead of the distance as the detection range, so that it is more intuitive. 
+3. Maze design with a lot of crossroads seems to be working well, as my peers look scared when they arrive at a crossroad. 
+4. The environmental lighting is too bright; it is better to reduce the intensity and number of lights.
+5. The walls in the scene are too dark and similar; they sometimes crash into walls.
+6. The player moves too fast, even faster than the monster
+7. One of the team members suggested hiding a hiding spot, such as a closet, to introduce stratetigic element in the chase.
+
+### Activity 2
