@@ -12,6 +12,8 @@ namespace W4Activity
         
         public static DialogueAdvancerW4 _Instance {get; private set;}
 
+        public GameObject vfxPrefab;
+
         // More Singleton stuff
         // do not edit this method
         private void Awake() {

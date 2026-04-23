@@ -20,3 +20,5 @@ MonoBehaviour:
     nextNode: {fileID: 11400000, guid: f595b83a9d21b4bc7b9a4c1987462357, type: 2}
   - line: I hate you
     nextNode: {fileID: 11400000, guid: 43ea5b41b25244b3282aea18e70edbff, type: 2}
+  - line: I can't see
+    nextNode: {fileID: 11400000, guid: ddfd36406da3940a9b33ed6e2d1b761f, type: 2}
