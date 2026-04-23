@@ -71,3 +71,9 @@ Playtest Team Member: Tina Meng,Xichan Zheng,JingyiBi,Alex Ding,Yan Zhang
 7. One of the team members suggested hiding a hiding spot, such as a closet, to introduce stratetigic element in the chase.
 
 ### Activity 2
+
+1. Yes, a writer could add more dialogue to this setup without writing any code because the lines are mainly stored in ScriptableObject instead of in C# script. They could simply use the inspector to create a new dialogue node or edit an existing node. The writer does not need to know how to code.
+
+2.Without writing any code, the number of dialogue nodes is unlimited because the writer could always continuously add new nodes to DialogueNodeW4. However, the actual number of dialogues might be influenced by project scale or management.
+
+3. The purpose of regenerating nodes before the activity is to rescan code and types so that custom types like PlayerReplyW4 can be identified and become a usable node in visual scripting graphs.
