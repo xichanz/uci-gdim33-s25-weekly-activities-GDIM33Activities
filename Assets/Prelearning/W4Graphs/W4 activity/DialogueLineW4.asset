@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Line: Hi I'm a dog
   ReplyOptions:
-  - line: ok
+  - line: Hi, I'm human
     nextNode: {fileID: 11400000, guid: 655bf0ba05c9e40f4bd1bb070fdcbd59, type: 2}
-  - line: no
+  - line: I'm a dog too
     nextNode: {fileID: 11400000, guid: f595b83a9d21b4bc7b9a4c1987462357, type: 2}
+  - line: I hate you
+    nextNode: {fileID: 11400000, guid: 43ea5b41b25244b3282aea18e70edbff, type: 2}
