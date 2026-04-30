@@ -77,3 +77,37 @@ Playtest Team Member: Tina Meng,Xichan Zheng,JingyiBi,Alex Ding,Yan Zhang
 2. Without writing any code, the number of dialogue nodes is unlimited because the writer could always continuously add new nodes to DialogueNodeW4. However, the actual number of dialogues might be influenced by project scale or management.
 
 3. The purpose of regenerating nodes before the activity is to rescan code and types so that custom types like PlayerReplyW4 can be identified and become a usable node in visual scripting graphs.
+
+## W5
+
+### Activity 1
+
+Animation system
+
+This system will allow the monster to play different animations based on the state it is in. For example, the patrol state will play a walk animation, whereas the chase state will play a running animation.
+
+Basic steps:
+1. create animator
+    1. download monster 3D model with animations: idle, walk, run, attack
+    2. import model and animation clips into Unity
+    3. create an animator controller. 
+    4. add an animator component and attach it to the monster
+    5. add animation states in the animator controller, including idle, walk, run, and attack
+    6. create an integer animator parameter named monsterState, which refers to each animation clip using an integer parameter
+        1. monsterState = 1: Patrol
+        2. monsterState = 2: Run
+        3. monsterState = 3: Attack
+    7. set animation transition based on monsterState value using conditions
+    8. test whether the setup is successful by changing the monsterState integer in the animator window when running the game and see whether the monster switch animation
+2. link the animator with the monster’s navigation state machine graph
+    1. open monster’s navigation state machine graph
+    2. open patrol state and add an Animator Set Integer node to set the monsterState integer to value 1, corresponding to the walk animation
+    3. test whether the walk animation and transition work by running the game and checking if the monster is walking in default patrol state.
+    4. open chase state and add an Animator Set Integer node to set the monsterState integer to value 2, corresponding to the run animation
+    5. test whether the run animation and transition work by running the game and checking if the monster switches from walk to run when the player enters detection range. 
+    6. open attack state and add an Animator Set Integer node to set the monsterState integer to value 3, corresponding to the attack animation
+    7. test whether the attack animation and transition work by running the game and checking if the monster play attack animation when player enters attack range.
+  
+### Activity 2
+
+
