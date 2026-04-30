@@ -110,4 +110,5 @@ Basic steps:
   
 ### Activity 2
 
+During class, I followed the steps to build the animation system. I finished importing the 3D model, animation clip, set up a monster animation controller, and added the animation state and integer animator parameter. I disable the monster’s capsule placeholder mesh renderer and drag the monster model as a child object so that I don’t have to set up the NavMesh agent and state machine again. Then I used the Animator Set Integer node in the visual scripting graph to control the transition of the animation clip in the monster’s state machine. However, the animation system wasn’t fully implemented sucessfully and I’m still in the process of debugging. 
 
