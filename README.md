@@ -112,3 +112,27 @@ Basic steps:
 
 During class, I followed the steps to build the animation system. I finished importing the 3D model, animation clip, set up a monster animation controller, and added the animation state and integer animator parameter. I disable the monster’s capsule placeholder mesh renderer and drag the monster model as a child object so that I don’t have to set up the NavMesh agent and state machine again. Then I used the Animator Set Integer node in the visual scripting graph to control the transition of the animation clip in the monster’s state machine. However, the animation system wasn’t fully implemented sucessfully and I’m still in the process of debugging. 
 
+## W6
+
+### Activity 1
+
+The goal for playtesting today will be testing the animations, navigation of the monster, and the core mechanic of path selection in crossroad. 
+
+Since my Milestone 1 submission, I have updated the level scene layout from greybox to an actual asset. I also adjusted the scale of the corridor to be more spacious. I also implemented the monster’s animation system based on the animator and state machine. The monster will play fly, chase, and attack animations based on the monster’s state. 
+
+[0506Playtest](https://xichanz.itch.io/0506playtest)
+
+Playtest order: Xichan, Alex, Tina, Xinyan
+
+####Playtesting notes: 
+
+1. The point light intensity is too high
+2. If the player takes time reading the instruction they will miss the monster patrolling and never encounter it because its navigation route is too long.
+3. The AI for monster navigation seems to be “dumb”; the player can easily run from her
+4. The door and window can be seen through and spoil the structure of the maze
+5. Replace the player’s capsule placeholder with an actual human model so that the player can see something when they look down
+6. The ceiling height is a bit low.
+7. The riddle at the crossroads is too simple. Peers suggested to replace riddle asking appeareance of the monster with a question about the number or color of the props.
+8. The ambush monster spawns too quickly
+
+### Activity 2
