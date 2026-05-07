@@ -116,11 +116,13 @@ During class, I followed the steps to build the animation system. I finished imp
 
 ### Activity 1
 
-The goal for playtesting today will be testing the animations, navigation of the monster, and the core mechanic of path selection in crossroad. 
+#### Playtest Goal
+
+The goal for playtesting today will be testing the animations, navigation of the monster, and the core mechanic of path selection in crossroads. 
 
 Since my Milestone 1 submission, I have updated the level scene layout from greybox to an actual asset. I also adjusted the scale of the corridor to be more spacious. I also implemented the monster’s animation system based on the animator and state machine. The monster will play fly, chase, and attack animations based on the monster’s state. 
 
-[0506Playtest](https://xichanz.itch.io/0506playtest)
+[Link to 0506Playtest Itch Build](https://xichanz.itch.io/0506playtest)
 
 Playtest order: Xichan, Alex, Tina, Xinyan
 
@@ -136,3 +138,8 @@ Playtest order: Xichan, Alex, Tina, Xinyan
 8. The ambush monster spawns too quickly
 
 ### Activity 2
+
+1.The multiply setting of the Blend node makes the resulting color darker and less saturated than the input colors because multiply node multiplies the RGB value of the two input colors. By multiplying the values, all of the value reduces because Unity has RGB values that range from 0~1, making both the value and the saturation lower. 
+2. When combining Alpha values with multiply node, the result will be more transparent because alpha also range beween 0 and 1, a multiplication of them often results in a smaller value, which leads to a more transparent result. 
+3. The shader gets UV values from the data of the UV unwrap from the model. This UV map tells the shader how to map the texture onto the surface of the model. 
+4. Yes, because different mode yields interesting and sometimes unexpected results. I've been studying Unity VFX using particle systems, and I also find parameters like color over lifetime a very useful and powerful tool in art creation.
