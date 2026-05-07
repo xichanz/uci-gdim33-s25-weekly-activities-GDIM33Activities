@@ -124,7 +124,7 @@ Since my Milestone 1 submission, I have updated the level scene layout from grey
 
 Playtest order: Xichan, Alex, Tina, Xinyan
 
-####Playtesting notes: 
+#### Playtesting notes: 
 
 1. The point light intensity is too high
 2. If the player takes time reading the instruction they will miss the monster patrolling and never encounter it because its navigation route is too long.
