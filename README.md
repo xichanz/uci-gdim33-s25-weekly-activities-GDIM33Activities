@@ -146,3 +146,16 @@ Playtest order: Xichan, Alex, Tina, Xinyan
 2. When combining Alpha values with multiply node, the result will be more transparent because alpha also range beween 0 and 1, a multiplication of them often results in a smaller value, which leads to a more transparent result.
 3. The shader gets UV values from the data of the UV unwrap from the model. This UV map tells the shader how to map the texture onto the surface of the model.
 4. Yes, because different mode yields interesting and sometimes unexpected results. I've been studying Unity VFX using particle systems, and I also find parameters like color over lifetime a very useful and powerful tool in art creation.
+
+
+## W6
+
+### Activity 1
+
+1. The data from the Vertex Color node comes from the vertices of the Shiba mesh. Each vertex stores the position, normal, tangent, color, and UV
+2. The edges blend at different regions of color because the GPU interpolates vertex data during rasterization. Each triangle has three vertices, and the GPU will create a gradient color between the three colors on each vertex.  
+3. The shiba from step three is less detailed compared to the shiba rendered with a texture because texture uses texture pixels, which hold a lot more information. Vertex color has much less detail because it can only store data on each vertex.
+4. Shiba’s rear leg has some discrepancy of color because the color change is not a smooth gradient; rather, it has a relatively bright cyan compared to its surroundings, suggesting a possible error in the ver normal’s orientation.
+5. Another piece of vertex data I could use to test with the debug shader is UV. This is because when UV is represented by color, we can visually tell if the UV wrap is stretched, flipped, or rotated incorrectly. 
+6. There is an error in the lighting in step four because the light direction vector is pointing towards the Shiba model when the Shiba’s normal vectors are pointing away from it. When two vectors are pointing in opposite directions, it results in a negative dot product, which reflects the opposite of the actual lighting environment. In order to accurately reflect the lighting, we could just times the light direction by negative one. 
+7. We set the blend mode to additive for the fire effect so that the bright areas appear brighter, intensified, glowing, and similar to fire. This glowing effect is similar to fire, which is a light-emitting phenomenon in real life.
