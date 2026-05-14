@@ -148,7 +148,7 @@ Playtest order: Xichan, Alex, Tina, Xinyan
 4. Yes, because different mode yields interesting and sometimes unexpected results. I've been studying Unity VFX using particle systems, and I also find parameters like color over lifetime a very useful and powerful tool in art creation.
 
 
-## W6
+## W7
 
 ### Activity 1
 
