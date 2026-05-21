@@ -165,6 +165,8 @@ Playtest order: Xichan, Alex, Tina, Xinyan
 
 ### Activity 1
 
+#### Playtesting goals: 
+
 Since the Milestone 2 submission, there haven’t been many updates in terms of game mechanics. However, I made some changes to the speed of both the player and the monster to ensure a fairer, smoother chase sequence. I plan to create a stylized pixel art shader that renders the 3D object into a retro low-res pixel style. 
 
 This goal for today’s playtest is to test the wrong-path ambush effects and their visual presentation. More specifically, I would like to test whether the maze design is intuitive and fair enough. 
