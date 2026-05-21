@@ -159,3 +159,34 @@ Playtest order: Xichan, Alex, Tina, Xinyan
 5. Another piece of vertex data I could use to test with the debug shader is UV. This is because when UV is represented by color, we can visually tell if the UV wrap is stretched, flipped, or rotated incorrectly. 
 6. There is an error in the lighting in step four because the light direction vector is pointing towards the Shiba model when the Shiba’s normal vectors are pointing away from it. When two vectors are pointing in opposite directions, it results in a negative dot product, which reflects the opposite of the actual lighting environment. In order to accurately reflect the lighting, we could just times the light direction by negative one. 
 7. We set the blend mode to additive for the fire effect so that the bright areas appear brighter, intensified, glowing, and similar to fire. This glowing effect is similar to fire, which is a light-emitting phenomenon in real life.
+
+
+## W8
+
+### Activity 1
+
+Since the Milestone 2 submission, there haven’t been many updates in terms of game mechanics. However, I made some changes to the speed of both the player and the monster to ensure a fairer, smoother chase sequence. I plan to create a stylized pixel art shader that renders the 3D object into a retro low-res pixel style. 
+
+This goal for today’s playtest is to test the wrong-path ambush effects and their visual presentation. More specifically, I would like to test whether the maze design is intuitive and fair enough. 
+
+Playtest order: Xichan, Alex, Tina, Xinyan
+
+[0520Playtest Build](https://xichanz.itch.io/0520playtest)
+
+#### Playtesting notes: 
+
+1. The riddles on the wall are too hard; it is hard to get the answer while escaping from the monster
+2. There should be a clear visual or audio cue when the monster is nearby or approaching the player. I probably need to increase the audio source on the monster.
+3. The player should have a humanoid mesh so that when the player looks down, there is a visible lower body, such as legs.
+4. Some mention that the lighting is too dark; it is very hard to count the number of lockers under such light. Other says that the light intensity is appropriate for a horror game. I probably need to increase the intensity around the lockers.
+5. There should be some degree of visual or audio feedback even with selecting the right path; otherwise, the game feels too safe and boring.
+6. The wrong-path trigger and the subsequence ambush effects seem to work well, as some of my peers scream after entering the wrong path and trigger the routine.
+
+### Activity 2C
+
+1. FullScreenPassRendererFeature is the pass associated with the post-processing effect because when I select this pass, I see the Draw Procedural call, which acts on the entire screen and applies a cobblestone texture overlay. From this, I can tell that this is a post-processing effect because it modified the entire screen image rather than a single object.
+2. When the Lerp value is set to 0.5, there is an equal blend of the original game screen, which shows TomatoCat in a bright green background and the cobblestone texture. When there is a Lerp value of 0, the game shows only the original TomatoCat without any post-processing effect. When the value is set to 1, the game shows the cobblestone texture with the strongest overlay effect.
+3. The screen looks different depending on the Lerp value because Lerp controls the blending intensity of the game screen and the cobblestone texture. When the Lerp value equals 0, the shader shows the original screen image. When the Lerp value equals 1, the cobblestone effect is fully applied. When the Lerp value is 0.5, the original game screen and cobblestone effect blend equally.
+4. Algorithm for the Lerp uses (sin(time)+1)/2 instead of just sin(time) because the sine wave has a range between -1 and 1, yet Lerp uses a value range from 0 to 1. When lerp uses a negative value to calculate the blend, the effect yielded will be undesirable. For instance, the output might be brighter or visually incorrect.
+
+
