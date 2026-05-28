@@ -191,4 +191,26 @@ Playtest order: Xichan, Alex, Tina, Xinyan
 3. The screen looks different depending on the Lerp value because Lerp controls the blending intensity of the game screen and the cobblestone texture. When the Lerp value equals 0, the shader shows the original screen image. When the Lerp value equals 1, the cobblestone effect is fully applied. When the Lerp value is 0.5, the original game screen and cobblestone effect blend equally.
 4. Algorithm for the Lerp uses (sin(time)+1)/2 instead of just sin(time) because the sine wave has a range between -1 and 1, yet Lerp uses a value range from 0 to 1. When lerp uses a negative value to calculate the blend, the effect yielded will be undesirable. For instance, the output might be brighter or visually incorrect.
 
+## W9
+
+### Activity 1
+
+#### Chosen Game
+At our table, we have picked Fruit Ninja as the game we’re all familiar with and want to analyze for rendering systems. 
+<img width="1470" height="956" alt="Screenshot 2026-05-27 at 5 49 35 PM" src="https://github.com/user-attachments/assets/69e2d759-9a76-44ee-9b6d-69cdcc0c4de6" />
+
+#### Rendering Systems
+1. The first rendering system is the outline for every special item, for example, the bomb and the specialized baana. We believe it is a rendering feature or object-based material effect that is only applied to objects that are designated to have a special function. The major feature of this shader is creating a 2d color outline for a 3d object. We believe we could activate that effect by assigning a special item to a specific layer and deactivte item when it is destroyed, used, or leaves the screen.
+2. Another rendering system we spot is the fever mode after the player hits a specialized banana. This effect is a full-screen post-processing effect that affects the full screen. The shader blends a moving pattern overlay upwards with time for a few seconds. The effect could be activated by the gameplay event of slicing the special banana, then disabled after a few seconds.
+3. The last feature we identify is the slicing trail effect that follows the player’s finger movement. We believe this individual effect is achieved by a combination of transparent material and particle system, with the usage of fading over time to create a trail. This effect is activated when the player’s input moves across the screen and is deactivated when the player stops movement.
+
+
+### Activity 2
+
+
+<img width="1393" height="919" alt="HurtPostEffect" src="https://github.com/user-attachments/assets/87ce3dce-6087-4160-bf41-4ca5fa459d37" />
+
+Previously, I’ve completed a full-screen shader graph that creates a dithered, retro effect. In addition to this shader, I worked on another shader to create a full-screen pulsating blood effect after the player gets hurt by the monster. This is because there is currently no visual feedback when the player gets caught by the monster. The only visual effect of the red vignette using post-processing occurs when the player enters the wrong path. Therefore, I believe having a blood screen helps to enhance player experience and create tension. During class, I solved the issue where the blood effect overlay completely covered the screen by adding a mask and a customized slider that controls the blend strength. 
+
+
 
