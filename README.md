@@ -219,7 +219,7 @@ Previously, I’ve completed a full-screen shader graph that creates a dithered,
 1. Since Milestone 2, I expanded the maze and added a fourth crossroad and a note interaction system, which the player could interact with and get a hint on the correct path.
 2. [link to Itch Page](https://xichanz.itch.io/0603playtest)
 3. The goal for today’s playtest is to check whether the difficulty level for the new riddle is appropriate, fun, and intuitive. I also hope to test whether the camera movement works in the build.
-4. Playtest note: 1) Camera sensitivity is too low. 2) [ESC] key for closing the note is not really appropriate because when people play the game on itch, pressing escape will exit full screen. 3)When the player reached the last crossroad, it was not very obvious that it was a three-way crossroad. There is only 1 really visible path. 4) Sometimes the player can’t turn after pressing E to read the note at the fourth crossroad. 5)The dash feature and the note interaction work in general
+4. Playtest note: 1) Camera sensitivity is too low. 2) [ESC] key for closing the note is not really appropriate because when people play the game on itch, pressing escape will exit full screen. 3)When the player reached the last crossroad, it was not very obvious that it was a three-way crossroad. There is only 1 really visible path. 4) Sometimes the player can’t turn after pressing E to read the note at the fourth crossroad. 5)The dash feature and the note interaction work in general 6) Most players find the difficulty of the riddle to be appropriate and straightforward.
 
 ### Activity 2
 
