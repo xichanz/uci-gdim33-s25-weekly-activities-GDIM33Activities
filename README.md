@@ -212,5 +212,20 @@ At our table, we have picked Fruit Ninja as the game we’re all familiar with a
 
 Previously, I’ve completed a full-screen shader graph that creates a dithered, retro effect. In addition to this shader, I worked on another shader to create a full-screen pulsating blood effect after the player gets hurt by the monster. This is because there is currently no visual feedback when the player gets caught by the monster. The only visual effect of the red vignette using post-processing occurs when the player enters the wrong path. Therefore, I believe having a blood screen helps to enhance player experience and create tension. During class, I solved the issue where the blood effect overlay completely covered the screen by adding a mask and a customized slider that controls the blend strength. 
 
+## W10
 
+### Activity 1
+
+1. Since Milestone 2, I expanded the maze and added a fourth crossroad and a note interaction system, which the player could interact with and get a hint on the correct path.
+2. [link to Itch Page](https://xichanz.itch.io/0603playtest)
+3. The goal for today’s playtest is to check whether the difficulty level for the new riddle is appropriate, fun, and intuitive. I also hope to test whether the camera movement works in the build.
+4. Playtest note: 1) Camera sensitivity is too low. 2) [ESC] key for closing the note is not really appropriate because when people play the game on itch, pressing escape will exit full screen. 3)When the player reached the last crossroad, it was not very obvious that it was a three-way crossroad. There is only 1 really visible path. 4) Sometimes the player can’t turn after pressing E to read the note at the fourth crossroad. 5)The dash feature and the note interaction work in general
+
+### Activity 2
+
+After discussion at our table, we believe the planning process of a game could start with brainstorming. After an initial idea, it is useful to create a moodboard to summarize the general idea and offering a aesthetic direction. A pitch document is then needed to offer a scope of the game and settle core mechanics. It should contains elevator pitch, mechanics, and system breakdown. This is important as it limits the scope of the game and prevents spiraling of new features and content in the later development process. At this stage, a bubble chart of all core mechanics across different systems is very useful. For instance, break the entire game into player system bubble, enemy AI system bubble, ui system, etc. Use lines to suggest connections between different systems. After this, it is helpful to start programming the game by breaking each task into smaller steps. This is useful as it breaks complex systems into manageable steps. Moreover, the specific instruction will also allow you to playtest for bugs during the process of implementation. 
+
+### Activity 3
+
+In today’s class, I continued to work on modifying gameplay. From the playtest, I realized that using the escape key to close the note is not convenient because it zooms out the page on itch. Thus, I replace the ESC key with the C key. I also updated camera sensitivity for a better experience because it becomes too low on itch. I also modified the speed for both the player and the monster to enable a more stressful chase.
 
